@@ -1,5 +1,5 @@
 /*
-  Blink
+  My Blink
 
   Turns the built-in LED on for 100ms, then off for 2000ms (2 seconds), repeatedly
   
