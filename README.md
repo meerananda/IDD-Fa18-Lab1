@@ -187,9 +187,7 @@ Information is not stored in this device.
 I tracked where the power was flowing through in the remote and tested the LED at various points in the circuit. Initially I thought it would be easiest to test the LED where the infrared diode is positioned at the top of the remote. However, at this point in the circuit the infrared diode only emits light when a button is pressed, and I wanted to see a continuous flow of current through my external LED. So I instead positioned the LED in parallel with the capacitor in the circuit. See below for the video and new schematics.
 
 ### 3. Build your light!
-![FrankenRemote](/images/PartF_3_Frankenlight.png)
 ![Updated Schematics](/images/PartF_3_FrankenlightSchematics.png)
-
 
 **Make a video showing off your Frankenlight.**
 
