@@ -4,18 +4,22 @@
 
 ## Part A. Set Up a Breadboard
 
-[insert a photo of your breadboard setup here]
+View from the top:\
 ![Breadboard Top](/images/PartA_1.png)
+
+View from an angle:\
 ![Breadboard Side](/images/PartA_2.png)
 
 
 ## Part B. Manually Blink a LED
 
-**a. What color stripes are on a 100 Ohm resistor?**
-220 - red, red, black, black, maroon.
+**a. What color stripes are on a 100 Ohm resistor?**\
+100 Ohm = Brown, Black, Brown\
+
+In the circuit above, we used a 220 Ohm resistor, for which the color stripes are: Red, Red, Black, Black.
  
-**b. What do you have to do to light your LED?**
-push the switch
+**b. What do you have to do to light your LED?**\
+The circuit needs to be complete in order to light the LED, so in this case the switch needs to be pushed down.
 
 
 ## Part C. Blink a LED using Arduino
