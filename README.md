@@ -74,6 +74,8 @@ void loop() {
 ```
 
 Below is a video of the built-in LED blinking:
+[Built-In LED Blink Video](https://youtu.be/-qDKHVOmNlA)
+[![Built-In LED Blink Video](http://img.youtube.com/vi/qDKHVOmNlA/0.jpg)](http://www.youtube.com/watch?v=qDKHVOmNlA "Built-In LED Blink Video")
 
 
 ### 2. Blink your LED
