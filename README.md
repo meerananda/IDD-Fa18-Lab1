@@ -1,16 +1,12 @@
 # IDD-Fa18-Lab1: Blink!
 
-**A lab report by John Q. Student**
-
-**Fork** this repository to get a template for Lab 1 for *Developing and Designing Interactive Devices* at Cornell Tech, Fall 2018. You should modify this `README.md` file to delete this paragraph and update below. As the lab asks:
-
-> Include your responses to the bold questions on your own fork of the lab activities. Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as `README.md` pages on your GitHub, and post a link to that on your main class hub page.
-
-We've copied the questions from the lab here. Answer them below!
+**A lab report by Meera Nanda**
 
 ## Part A. Set Up a Breadboard
 
 [insert a photo of your breadboard setup here]
+![Breadboard Top](/images/PartA_1.png)
+![Breadboard Side](/images/PartA_2.png)
 
 
 ## Part B. Manually Blink a LED
