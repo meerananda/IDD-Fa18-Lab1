@@ -17,6 +17,8 @@ The circuit needs to be complete in order to light the LED, so in this case the 
 
 ![Circuit Angle](/images/PartB_BreadboardAngle.png)
 
+[Switch Video](https://youtu.be/ZZL-1xwhWc4)
+
 
 ## Part C. Blink a LED using Arduino
 
