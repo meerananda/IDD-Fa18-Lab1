@@ -117,7 +117,7 @@ int led = 11;
 **b. What is analogWrite()? How is that different than digitalWrite()?**\
 analogWrite() writes an analog value to a pin, and therefore allows a range of values as inputs. In the case of an LED, it can be used to lit it at varying brightness levels ranging from 0-255. Using digitalWrite() only allows you to set the state of a pin to either HIGH or LOW.
 
-[Funky Fade Code]((/code/NewFade.ino):
+[Funky Fade Code](/code/NewFade.ino):
 ```c
 /*
   New Fade
@@ -149,7 +149,7 @@ void loop() {
   if (brightness <= 0 || brightness >= 255) {
     fadeAmount = -fadeAmount;
   }
-  // wait for 30 milliseconds to see the dimming effect
+  // wait for 100 milliseconds to see the dimming effect
   delay(100);
 }
 ```
