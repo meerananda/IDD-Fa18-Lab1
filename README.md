@@ -28,7 +28,8 @@ The circuit needs to be complete in order to light the LED, so in this case the 
 In the Arduino built-in Blink example, no changes need to be made to the code in order to make the LED blink. However, the line of code that causes the blink is:
 
 ```c
-digitalWrite(LED_BUILTIN, HIGH); 
+digitalWrite(LED_BUILTIN, HIGH); // turn the LED on
+digitalWrite(LED_BUILTIN, LOW);  // turn the LED off
 ```
 
 By setting the built-in LED's voltage to high, it causes LED to light up.
@@ -45,7 +46,7 @@ Currently it is set to 1000ms, or 1 second. We can change this to 100ms to incre
 
 
 **c. What circuit element would you want to add to protect the board and external LED?**\
-A resistor would protect the board and the LED from potentially experiencing a short circuit.
+A resistor would protect the board and the LED.
  
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**\
 At a delay of approximately 10ms, I can no longer perceive the LED blinking. We can prove that it still is blinking however, by using a logger within the system. Using the code below, I logged each time the voltage on the LED was set to high and to low in order to ensure there was a blink still occuring. 
@@ -78,7 +79,7 @@ Output screenshot:
 
 [MyBlink Code](/code/MyBlink.ino)
 
-Below is a video of the built-in LED blinking:
+Below is a video of the built-in LED blinking with the new code:
 
 [Built-In LED Blink Video](https://youtu.be/Mj07bMg7gBw)
 
@@ -115,7 +116,7 @@ int led = 11;
 ```
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**\
-analogWrite() writes an analog value to a pin, and therefore allows a range of values as inputs. In the case of an LED, it can be used to lit it at varying brightness levels ranging from 0-255. Using digitalWrite() only allows you to set the state of a pin to either HIGH or LOW.
+analogWrite() writes an analog value to a pin, and therefore allows a range of values as inputs. In the case of an LED connected to a pin, analogWrite() can be used to light it at varying brightness levels ranging from 0-255. Using digitalWrite() only allows you to set the state of a pin to either HIGH or LOW, meaning voltage or no voltage.
 
 [Funky Fade Code](/code/NewFade.ino):
 ```c
@@ -179,12 +180,12 @@ There are no sensors, only buttons within the remote. As they are pressed, infor
 The device is powered by a 3V lithium battery. There is a capacitor that is regulating the power.
 
 **d. Is information stored in your device? Where? How?**\
-Information is not stored in this device. 
+Information is not stored in this device while it is being used.
 
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
 **Describe what you did here.**\
-I tracked where the power was flowing through in the remote and tested the LED at various points in the circuit. Initially I thought it would be easiest to test the LED where the infrared diode is positioned at the top of the remote. However, at this point in the circuit the infrared diode only emits light when a button is pressed, and I wanted to see a continuous flow of current through my external LED. So I instead positioned the LED in parallel with the capacitor in the circuit. See below for the video and new schematics.
+I tracked where the power was flowing through in the remote and tested the LED at various points in the circuit. Initially I thought it would be easiest to test the LED where the infrared LED is positioned at the top of the remote. However, at this point in the circuit the infrared diode only emits light when a button is pressed, and I wanted to see a continuous flow of current through my external LED. So I instead positioned the LED in parallel with the capacitor in the circuit. See below for the video and new schematics.
 
 ### 3. Build your light!
 ![Updated Schematics](/images/PartF_3_FrankenlightSchematics.png)
