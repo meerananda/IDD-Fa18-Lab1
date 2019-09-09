@@ -5,10 +5,10 @@
 ## Part A. Set Up a Breadboard
 
 View from the top:\
-![Breadboard Top](/images/PartA_BreadboardTop.png | width=100)
+![Breadboard Top](/images/PartA_BreadboardTop.png){:height="200px"}
 
 View from an angle:\
-![Breadboard Side](/images/PartA_BreadboardAngle.png | width=100)
+![Breadboard Side](/images/PartA_BreadboardAngle.png){:height="100px"}
 
 
 ## Part B. Manually Blink a LED
