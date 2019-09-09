@@ -46,14 +46,14 @@ A resistor would protect the board and the LED from potentially experiencing a s
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**\
 At a delay of approximately 10ms, I can no longer perceive the LED blinking. We can prove that it still is however, using a logger within the system. Using the code below, I logged each time the voltage on the LED was set to high and to low in order to ensure there was a blink still occuring. 
 
-Code snippet:
+[Code snippet](/code/MyBlink.ino):
 
 Output screenshot:
 
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
-Code snippet:
+[Code snippet](/code/MyBlink.ino):
 
 
 ### 2. Blink your LED
