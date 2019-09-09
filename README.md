@@ -51,9 +51,28 @@ A resistor would protect the board and the LED from potentially experiencing a s
 At a delay of approximately 10ms, I can no longer perceive the LED blinking. We can prove that it still is however, using a logger within the system. Using the code below, I logged each time the voltage on the LED was set to high and to low in order to ensure there was a blink still occuring. 
 
 [Code snippet](/code/MyBlink.ino):
+```c
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+  // initialize serial monitor to log messages
+  Serial.begin(9600);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  Serial.write("On"); // print when LED is lit
+  delay(10);                       // wait for 10ms
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  Serial.write("Off"); // print when LED is not lit
+  delay(10);                       // wait for 10ms
+}
+```
 
 Output screenshot:
-
+![Serial Monitor Screenshot](/images/PartC_SerialMonitor.png)
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
