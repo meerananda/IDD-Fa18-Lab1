@@ -16,7 +16,7 @@
 1. Black is for the second digit, 0
 1. The second Brown is for the multiplier, 10
 
-Therefore we end up with 10x10=100 Ohms. Depending on the color of the 4th band, we will have a certain tolerance number as well. E.g. if the fourth band is gold, then there will be a tolerance of 5%.
+Therefore we end up with 10x10=100 Ohms. Depending on the color of the 4th band, the resistor will have certain tolerance number as well, e.g. if the fourth band is gold then the resistor will have a tolerance of 5%.
  
 **b. What do you have to do to light your LED?**\
 The circuit needs to be complete in order to light the LED, so in this case the switch needs to be pushed down. Below are photos of the implemented circuit, and a video of the switch in action:
