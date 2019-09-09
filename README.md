@@ -74,15 +74,15 @@ void loop() {
 ```
 
 Below is a video of the built-in LED blinking:
-[Built-In LED Blink Video](https://youtu.be/-qDKHVOmNlA)
-[![Built-In LED Blink Video](http://img.youtube.com/vi/qDKHVOmNlA/0.jpg)](http://www.youtube.com/watch?v=qDKHVOmNlA "Built-In LED Blink Video")
+
+[Built-In LED Blink Video](https://youtu.be/Mj07bMg7gBw)
 
 
 ### 2. Blink your LED
 
 **Make a video of your LED blinking, and add it to your lab submission.**
 
-[link to your video here; feel free to upload to youtube and just paste in a link here]
+[External LED Blink Video](https://youtu.be/zyHayApGkGg)
 
 
 ## Part D. Manually fade an LED
@@ -92,6 +92,7 @@ Yes, the LED glows through the whole turning range of the potentiometer. At it's
 
 Below is a video of the implemented circuit:
 
+[Manual Fade Video](https://youtu.be/M1O6f0q4NR4)
 
 ## Part E. Fade an LED using Arduino
 
@@ -148,6 +149,11 @@ void loop() {
 }
 ```
 
+Below is a video of the Arduino controlled fade:
+
+[Arduino Fade Video](https://youtu.be/KBfzRxoezfQ)
+
+
 ## Part F. FRANKENLIGHT!!!
 
 ### 1. Take apart your electronic device, and draw a schematic of what is inside. 
@@ -157,6 +163,7 @@ For this section, I used an old radio remote controller:
 
 Below are the schematics:
 ![Radio Remote Schematics](/images/PartF_1_RemoteSchematics.png)
+![Radio Remote System Diagram](/images/PartF_1_RemoteSystemDiagram.png)
 
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**\
@@ -174,12 +181,16 @@ Information is not stored in this device during usage.
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
 **Describe what you did here.**\
-I tracked where the power was flowing through in the remote and tested the LED at various points in the circuit. Initially I thought it would be easiest to test the LED where the infrared diode is positioned at the top of the remote. However, at this point in the circuit the infrared diode only emits light when a button is pressed, and I wanted to see a continuous flow of current through my external LED. So I instead positioned the LED in series with the capacitor in the circuit. See below for the video and schematics.
+I tracked where the power was flowing through in the remote and tested the LED at various points in the circuit. Initially I thought it would be easiest to test the LED where the infrared diode is positioned at the top of the remote. However, at this point in the circuit the infrared diode only emits light when a button is pressed, and I wanted to see a continuous flow of current through my external LED. So I instead positioned the LED in series with the capacitor in the circuit. See below for the video and new chematics.
 
 ### 3. Build your light!
 ![FrankenRemote](/images/PartF_3_Frankenlight.png)
+![Updated Schematics](/images/PartF_3_FrankenlightSchematics.png)
+
 
 **Make a video showing off your Frankenlight.**
+
+[Frankenlight Video](https://youtu.be/-qDKHVOmNlA)
 
 
 **Include any schematics or photos in your lab write-up.**
