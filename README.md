@@ -4,11 +4,7 @@
 
 ## Part A. Set Up a Breadboard
 
-View from the top:\
 ![Breadboard Top](/images/PartA_BreadboardTop.png)
-
-View from an angle:\
-![Breadboard Side](/images/PartA_BreadboardAngle.png)
 
 
 ## Part B. Manually Blink a LED
@@ -19,7 +15,6 @@ View from an angle:\
 **b. What do you have to do to light your LED?**\
 The circuit needs to be complete in order to light the LED, so in this case the switch needs to be pushed down. Below are photos of the implemented circuit, and a video of the switch in action:
 
-![Circuit Top](/images/PartB_BreadboardTop.png)
 ![Circuit Angle](/images/PartB_BreadboardAngle.png)
 
 
@@ -30,7 +25,9 @@ The circuit needs to be complete in order to light the LED, so in this case the 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**\
 In the Arduino built-in Blink example, no changes need to be made to the code in order to make the LED blink. However, the line of code that causes the blink is:
 
+```c
 digitalWrite(LED_BUILTIN, HIGH); 
+```
 
 By setting the built-in LED's voltage to high, it causes LED to light up.
 
@@ -38,7 +35,9 @@ By setting the built-in LED's voltage to high, it causes LED to light up.
 **b. What line(s) of code do you need to change to change the rate of blinking?**\
 The line of code that needs to change to change the rate of blinking is the delay() function: 
 
+```c
 delay(1000); 
+```
 
 Currently it is set to 1000ms, or 1 second. We can change this to 100ms to increase the blink rate.
 
