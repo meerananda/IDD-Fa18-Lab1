@@ -88,11 +88,57 @@ Yes, the LED glows through the whole turning range of the potentiometer. At it's
 ## Part E. Fade an LED using Arduino
 
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**\
-I had to modify the output pin from 9 to 11, which is where the external LED is connected.
+I had to modify the output pin from 9 to 11, which is where the external LED is connected. See the updated code [here](/code/NewFade.ino), or a snippet below:
+
+Original line:
+```c
+int led = 9; 
+```
+
+New line:
+```c
+int led = 11; 
+```
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**\
-analogWrite() writes an analog value to a pin. In the case of an LED, it can be used to lit it at varying brightness levels ranging from 0-255. Using digitalWrite() only allows you to set the state of a pin to either HIGH or LOW.
+analogWrite() writes an analog value to a pin, and therefore allows a range of values as inputs. In the case of an LED, it can be used to lit it at varying brightness levels ranging from 0-255. Using digitalWrite() only allows you to set the state of a pin to either HIGH or LOW.
 
+Funky Fade:
+```c
+/*
+  New Fade
+
+  This example shows how to fade an LED on pin 11 using the analogWrite()
+  function.
+
+*/
+
+int led = 11;           // the PWM pin the LED is attached to
+int brightness = 0;    // how bright the LED is
+int fadeAmount = 12;    // how many points to fade the LED by
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // declare pin 11 to be an output:
+  pinMode(led, OUTPUT);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  // set the brightness of pin 11:
+  analogWrite(led, brightness);
+
+  // change the brightness for next time through the loop:
+  brightness = brightness + fadeAmount;
+
+  // reverse the direction of the fading at the ends of the fade:
+  if (brightness <= 0 || brightness >= 255) {
+    fadeAmount = -fadeAmount;
+  }
+  // wait for 30 milliseconds to see the dimming effect
+  delay(100);
+}
+```
 
 ## Part F. FRANKENLIGHT!!!
 
