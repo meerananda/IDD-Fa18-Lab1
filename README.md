@@ -5,10 +5,10 @@
 ## Part A. Set Up a Breadboard
 
 View from the top:\
-![Breadboard Top](/images/PartA_1.png)
+![Breadboard Top](/images/PartA_BreadboardTop.png)
 
 View from an angle:\
-![Breadboard Side](/images/PartA_2.png)
+![Breadboard Side](/images/PartA_BreadboardAngle.png)
 
 
 ## Part B. Manually Blink a LED
@@ -17,7 +17,10 @@ View from an angle:\
 100 Ohm = Brown, Black, Brown.
  
 **b. What do you have to do to light your LED?**\
-The circuit needs to be complete in order to light the LED, so in this case the switch needs to be pushed down.
+The circuit needs to be complete in order to light the LED, so in this case the switch needs to be pushed down. Below are photos of the implemented circuit, and a video of the switch in action:
+
+![Circuit Top](/images/PartB_BreadboardTop.png)
+![Circuit Angle](/images/PartB_BreadboardAngle.png)
 
 
 ## Part C. Blink a LED using Arduino
@@ -71,6 +74,8 @@ void loop() {
 
 ```
 
+Below is a video of the built-in LED blinking:
+
 
 ### 2. Blink your LED
 
@@ -83,6 +88,8 @@ void loop() {
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**\
 Yes, the LED glows through the whole turning range of the potentiometer. At it's highest resistance it still emits a very faint glow. This is because there is still a small amount of current in the circuit despite there being the resistance from the potentiometer and the 220 Ohm resistor.
+
+Below is a video of the implemented circuit:
 
 
 ## Part E. Fade an LED using Arduino
@@ -143,6 +150,13 @@ void loop() {
 ## Part F. FRANKENLIGHT!!!
 
 ### 1. Take apart your electronic device, and draw a schematic of what is inside. 
+For this section, I used an old radio remote controller:
+![Radio Remote](/images/PartF_1_RemoteOutside.png)
+![Radio Remote Circuit](/images/PartF_1_RemoteInside.png)
+
+Below are the schematics:
+![Radio Remote Schematics](/images/PartF_1_RemoteSchematics.png)
+
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**\
 There is no computation device within the remote. 
@@ -159,12 +173,12 @@ Information is not stored in this device during usage.
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
 **Describe what you did here.**\
-I tracked where the power was flowing through in the remote and tested the LED at various points in the circuit. Initially I thought it would be easiest to test the LED where the infrared diode is positioned:
-
-However, at this point in the circuit the infrared diode only emits light when a button is pressed, and I wanted to see a continuous flow of current through my external LED. So I instead positioned the LED in series with the capacitor in the circuit. See below for the video and schematics.
+I tracked where the power was flowing through in the remote and tested the LED at various points in the circuit. Initially I thought it would be easiest to test the LED where the infrared diode is positioned at the top of the remote. However, at this point in the circuit the infrared diode only emits light when a button is pressed, and I wanted to see a continuous flow of current through my external LED. So I instead positioned the LED in series with the capacitor in the circuit. See below for the video and schematics.
 
 ### 3. Build your light!
+![FrankenRemote](/images/PartF_3_Frankenlight.png)
 
 **Make a video showing off your Frankenlight.**
+
 
 **Include any schematics or photos in your lab write-up.**
