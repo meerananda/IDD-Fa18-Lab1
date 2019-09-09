@@ -48,7 +48,7 @@ Currently it is set to 1000ms, or 1 second. We can change this to 100ms to incre
 A resistor would protect the board and the LED from potentially experiencing a short circuit.
  
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**\
-At a delay of approximately 10ms, I can no longer perceive the LED blinking. We can prove that it still is however, using a logger within the system. Using the code below, I logged each time the voltage on the LED was set to high and to low in order to ensure there was a blink still occuring. 
+At a delay of approximately 10ms, I can no longer perceive the LED blinking. We can prove that it still is blinking however, by using a logger within the system. Using the code below, I logged each time the voltage on the LED was set to high and to low in order to ensure there was a blink still occuring. 
 
 [Code snippet](/code/MyBlink.ino):
 ```c
@@ -76,23 +76,7 @@ Output screenshot:
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
-[Code snippet](/code/MyBlink.ino):
-```c
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
-
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(100);                       // wait for 100ms
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(2000);                       // wait for 2 seconds
-}
-
-```
+[MyBlink Code](/code/MyBlink.ino):
 
 Below is a video of the built-in LED blinking:
 
@@ -133,7 +117,7 @@ int led = 11;
 **b. What is analogWrite()? How is that different than digitalWrite()?**\
 analogWrite() writes an analog value to a pin, and therefore allows a range of values as inputs. In the case of an LED, it can be used to lit it at varying brightness levels ranging from 0-255. Using digitalWrite() only allows you to set the state of a pin to either HIGH or LOW.
 
-Funky Fade:
+[Funky Fade Code]((/code/NewFade.ino):
 ```c
 /*
   New Fade
