@@ -150,8 +150,7 @@ void loop() {
 
 ### 1. Take apart your electronic device, and draw a schematic of what is inside. 
 For this section, I used an old radio remote controller:
-![Radio Remote](/images/PartF_1_RemoteOutside.png)
-![Radio Remote Circuit](/images/PartF_1_RemoteInside.png)
+![Radio Remote](/images/PartF_1_RemoteOutside.png)![Radio Remote Circuit](/images/PartF_1_RemoteInside.png)
 
 Below are the schematics:
 ![Radio Remote Schematics](/images/PartF_1_RemoteSchematics.png)
