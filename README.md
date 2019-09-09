@@ -163,11 +163,9 @@ Below is a video of the Arduino controlled fade:
 
 ### 1. Take apart your electronic device, and draw a schematic of what is inside. 
 For this section, I used an old radio remote controller:
-![Radio Remote](/images/PartF_1_RemoteOutside.png)
-![Radio Remote Circuit](/images/PartF_1_RemoteInside.png)
+![Radio Remote](/images/PartF_1_Remote.png)
 
-Below are the schematics:
-![Radio Remote Schematics](/images/PartF_1_RemoteSchematics.png)
+Below are the system diagram and schematics:
 ![Radio Remote System Diagram](/images/PartF_1_RemoteSystemDiagram.png)
 
 
@@ -181,12 +179,12 @@ There are no sensors, only buttons within the remote. As they are pressed, infor
 The device is powered by a 3V lithium battery. There is a capacitor that is regulating the power.
 
 **d. Is information stored in your device? Where? How?**\
-Information is not stored in this device during usage. 
+Information is not stored in this device. 
 
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
 **Describe what you did here.**\
-I tracked where the power was flowing through in the remote and tested the LED at various points in the circuit. Initially I thought it would be easiest to test the LED where the infrared diode is positioned at the top of the remote. However, at this point in the circuit the infrared diode only emits light when a button is pressed, and I wanted to see a continuous flow of current through my external LED. So I instead positioned the LED in series with the capacitor in the circuit. See below for the video and new chematics.
+I tracked where the power was flowing through in the remote and tested the LED at various points in the circuit. Initially I thought it would be easiest to test the LED where the infrared diode is positioned at the top of the remote. However, at this point in the circuit the infrared diode only emits light when a button is pressed, and I wanted to see a continuous flow of current through my external LED. So I instead positioned the LED in parallel with the capacitor in the circuit. See below for the video and new schematics.
 
 ### 3. Build your light!
 ![FrankenRemote](/images/PartF_3_Frankenlight.png)
